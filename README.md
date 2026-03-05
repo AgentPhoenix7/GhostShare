@@ -22,7 +22,7 @@ Need to send a sensitive file, document, or archive without it living on a serve
 
 **Frontend:**
 * HTML5 / Vanilla JavaScript
-* Tailwind CSS v4 (Compiled via PostCSS)
+* Tailwind CSS v4 (Compiled via @tailwindcss/cli)
 
 **Backend:**
 * Node.js & Express.js
