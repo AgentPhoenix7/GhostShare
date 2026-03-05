@@ -9,6 +9,7 @@ const helmet = require('helmet');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+app.set('trust proxy', 1); // Trust first proxy for rate limiting if behind a reverse proxy
 
 // CONFIG
 const UPLOAD_DIR = path.join(__dirname, 'uploads');
