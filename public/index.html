@@ -22,10 +22,10 @@
     <div class="absolute top-0 -right-40 w-96 h-96 bg-cyan-600 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
     <div class="absolute -bottom-40 left-20 w-96 h-96 bg-pink-600 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-4000"></div>
 </div>
-<div class="container mx-auto px-4 py-12 md:py-20 flex-grow flex items-center justify-center">
+<div class="container mx-auto px-4 py-12 md:py-20 grow flex items-center justify-center">
     <div class="glass w-full max-w-4xl bg-white/5 backdrop-blur-2xl border border-white/10 rounded-3xl p-8 md:p-12 shadow-[0_0_60px_-15px_rgba(0,0,0,0.3)]">
         <div class="text-center mb-12 border-b border-white/10 pb-10">
-            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600">
+            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tighter bg-clip-text text-transparent bg-linear-to-r from-cyan-400 via-blue-500 to-purple-600">
                 GhostShare
             </h1>
             <p class="mt-4 text-lg text-slate-300 max-w-lg mx-auto">
@@ -60,7 +60,7 @@
                     <div class="relative">
                         <label for="uploadPassphrase"></label><input type="password" id="uploadPassphrase" placeholder="Optional passphrase" class="w-full px-5 py-3.5 bg-white/5 border border-white/10 rounded-xl text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200">
                     </div>
-                    <button type="submit" id="uploadBtn" class="w-full text-center bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-bold py-3.5 px-6 rounded-xl transition-all duration-300 transform hover:scale-[1.02] shadow-lg flex items-center justify-center gap-2">
+                    <button type="submit" id="uploadBtn" class="w-full text-center bg-linear-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-bold py-3.5 px-6 rounded-xl transition-all duration-300 transform hover:scale-[1.02] shadow-lg flex items-center justify-center gap-2">
                         <span>Upload File (Max 200MB)</span>
                     </button>
                 </form>
@@ -82,7 +82,7 @@
                     <div class="relative">
                         <label for="redeemPassphrase"></label><input type="password" id="redeemPassphrase" placeholder="Passphrase (if secured)" class="w-full px-5 py-3.5 bg-white/5 border border-white/10 rounded-xl text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition duration-200">
                     </div>
-                    <button type="submit" id="downloadBtn" class="w-full text-center bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-bold py-3.5 px-6 rounded-xl transition-all duration-300 transform hover:scale-[1.02] shadow-lg flex items-center justify-center gap-2">
+                    <button type="submit" id="downloadBtn" class="w-full text-center bg-linear-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-bold py-3.5 px-6 rounded-xl transition-all duration-300 transform hover:scale-[1.02] shadow-lg flex items-center justify-center gap-2">
                         <span>Download & Destroy</span>
                     </button>
                 </form>

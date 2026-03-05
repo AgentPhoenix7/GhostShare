@@ -224,7 +224,7 @@ setInterval(() => {
 }, 60 * 60 * 1000); // Every hour
 
 // Global error handler
-app.use((err, req, res, next) => {
+app.use((err, req, res, _next) => {
     console.error(err.stack);
     res.status(500).json({ error: 'Something broke on the server!' });
 });
