@@ -120,10 +120,19 @@
         const display = document.getElementById('fileNameDisplay');
         if (e.target.files && e.target.files.length > 0) {
             // Show selected file name
-            display.innerHTML = `<span class="font-semibold text-blue-400">${e.target.files[0].name}</span>`;
+            const selectedName = document.createElement('span');
+            selectedName.className = 'font-semibold text-blue-400';
+            selectedName.textContent = e.target.files[0].name;
+            display.textContent = '';
+            display.appendChild(selectedName);
         } else {
             // Revert back if they cancel
-            display.innerHTML = '<span class="font-semibold text-blue-400">Click to browse</span> or drag and drop';
+            const prompt = document.createElement('span');
+            prompt.className = 'font-semibold text-blue-400';
+            prompt.textContent = 'Click to browse';
+            display.textContent = '';
+            display.appendChild(prompt);
+            display.appendChild(document.createTextNode(' or drag and drop'));
         }
     });
 
